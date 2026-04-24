@@ -1,0 +1,22 @@
+mqtt:
+  climate:
+    - name: "Towel Rail"
+      unique_id: "terma_towel_rail"
+      # Temperature Control
+      temperature_command_topic: "terma/element/set"
+      temperature_state_topic: "terma/element/status"
+      # Current Temperature (Actual sensor reading)
+      current_temperature_topic: "terma/element/actual_status"
+      # Power/Mode Control
+      mode_command_topic: "terma/living_room/mode_set"
+      mode_state_topic: "terma/living_room/mode_state"
+      modes:
+        - "off"
+        - "heat"
+      payload_on: "heat"
+      payload_off: "off"
+      min_temp: 30
+      max_temp: 60
+      temp_step: 1
+      temperature_unit: "C"
+      precision: 0.1
