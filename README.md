@@ -56,7 +56,7 @@ Create the file: /etc/systemd/system/terma-bridge.service
 
 Paste the following:
 
-Ini, TOML
+```Ini, TOML
 [Unit]
 Description=Terma Bluetooth to MQTT Bridge
 After=network.target bluetooth.target
@@ -77,6 +77,8 @@ Bash
 sudo systemctl daemon-reload
 sudo systemctl enable terma-bridge.service
 sudo systemctl start terma-bridge.service
+```
+
 Troubleshooting
 Device Busy: Ensure no other apps (like the mobile app) are connected to the radiator. BLE only supports one connection at a time.
 
