@@ -45,7 +45,7 @@ mqtt:
       temp_step: 1
       temperature_unit: "C"
       precision: 0.1
-
+```
 Python Bridge (terma_bridge.py)
 Update the MQTT_BROKER, DEVICE_MAC, and ADAPTER (usually hci0 or hci1) variables at the top of the script.
 
