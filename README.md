@@ -71,9 +71,10 @@ RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
+```
 Enable and start:
 
-Bash
+```Bash
 sudo systemctl daemon-reload
 sudo systemctl enable terma-bridge.service
 sudo systemctl start terma-bridge.service
